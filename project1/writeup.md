@@ -10,11 +10,15 @@ The goals / steps of this project are the following:
 
 My pipeline consisted of 5 steps. 
 step one: I converted the images to grayscale. 
+![image](https://github.com/elonshi/udacity/raw/master/project1/images/grayscale.png)
 step two: used a 5 order Gaussian Filter to reduce image noise.
+![image](https://github.com/elonshi/udacity/raw/master/project1/images/gaussian_filter.png)
 step three: used the canny edge detection algorithm to detect the edge of the image.
+![image](https://github.com/elonshi/udacity/raw/master/project1/images/canny_edges.png)
 step four: selected the area of interest in the image.
+![image](https://github.com/elonshi/udacity/raw/master/project1/images/region_mask.png)
 step five: used the hough transform algorithm detect the Lane lines on the road.
-
+![image](https://github.com/elonshi/udacity/raw/master/project1/images/hough_transform.png)
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by three steps:
 step one: distinguish the points belonging to the left lane line and the points belonging to the right lane line 
           according to the positive and negative slope of the slope.
