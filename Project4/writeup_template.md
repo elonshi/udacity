@@ -111,4 +111,7 @@ Here's a [link to my video result](./project_video.mp4)
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
+In this project, I used the color transforms, gradients and perspective transform methods to detect the lane line.There are two places to improve：
+(1)use the information in first frame of video to search for the position of the lines in subsequent frames of video.This will improve speed and accuracy.
+(2)implement outlier rejection and use a low-pass filter to smooth the lane detection over frames, meaning add each new detection to a weighted mean of the position of the lines to avoid jitter.
+
