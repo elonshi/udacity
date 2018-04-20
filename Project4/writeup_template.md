@@ -83,13 +83,14 @@ I verified that my perspective transform was working as expected by drawing the 
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
-Then I did some other stuff and fit my lane lines with a 2nd order polynomial kinda like this:
+Then I did some other stuff and fit my lane lines with a 2nd order polynomial kinda.First,I choose the number of sliding windows,then
+identify the x and y positions of all nonzero pixels in the image,fit a second order polynomial to each indices.The result like this:
 
 ![alt text][image5]
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
-I did this in the 7th code cell of the IPython notebook.
+I use the second order polynomial to calculate the the radius of curvature of the lane,I did this in the 7th code cell of the IPython notebook.
 
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
 
